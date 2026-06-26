@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #e4e4e7;
+  --app-font-sans: "Manrope", system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+  --app-font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular",
+    Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--app-font-sans);
+  --font-mono: var(--app-font-mono);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--app-font-sans);
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: var(--app-font-mono);
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.35);
+  color: #e6fffa;
+}
